@@ -1,1 +1,1 @@
-document.addEventListener("scroll", alert("first test"))
+// document.addEventListener("scroll", alert("first test"))

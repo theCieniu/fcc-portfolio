@@ -1,4 +1,3 @@
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -7,8 +6,8 @@
 
 body {
   width: 100vw;
-overflow-x: hidden;
-    --darkaccent: #222222;
+  overflow-x: hidden;
+  --darkaccent: #222222;
   --lightaccent: #aaaaaa;
   --bcgcolor: #eeeeee;
   font-family: ;
@@ -26,22 +25,29 @@ a:link:active, a:visited:active {
   color: (internal value);
 }
 
-
 /*======= NAVIGATION ===========*/
+/*User Story #11: The navbar should always
+be at the top of the viewport.*/
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
 
-
+/*======= WELCOME SECTION ===========*/
+/*<!-- User Story #10: The height of the welcome section
+should be equal to the height of the viewport.-->*/
+#welcome-section {
+  height: 100vh;
+}
 
 /*======= SECTION ===========*/
 /*======= SECTION ===========*/
 /*======= SECTION ===========*/
 /*======= SECTION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
-
-
-
 /*======= MEDIA QUERY ===========*/
 @media (min-width:700px) {
-/*======= ================= ===========*/
-/*======= ================== ===========*/
+  /*<!-- User Story #9: My portfolio should have
+at least one media query.-->*/
+  /*======= ================== ===========*/
 }
