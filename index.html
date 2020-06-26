@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" href="images/favicon-freecodecamp.jpg" type="image/ico" />
     <meta name="author" content="Paulina Weiher" />
     <meta name="keywords" content="web developer, portfolio" />
@@ -28,11 +28,11 @@
     <!-- User Story #6: My portfolio should have a navbar with an id of navbar.-->
     <nav id="navbar">
       <header>
-        <span class="fcc">Free Code Camp</span>
-        <img src="images/freecodecamp.jpg" />
-        <span>Projects by Paulina Weiher</span>
+        <div class="fcc">Free Code Camp</div>
+        <div class="img"><img src="images/freecodecamp.jpg" /></div>
+        <div>Projects by Paulina Weiher</div>
       </header>
-      <ol>
+      <ul>
         <!-- User Story #7: The navbar should contain at least one link
 that I can click on to navigate to different sections of the page.-->
         <li><a href="#about">About</a></li>
@@ -47,12 +47,12 @@ that I can click on to navigate to different sections of the page.-->
         </li>
         <!-- User Story #8: My portfolio should have a link with an id of profile-link,
         which opens my GitHub or FCC profile in a new tab.-->
-      </ol>
+      </ul>
     </nav>
 
     <!-- User Story #1: My portfolio should have a welcome section
 with an id of welcome-section.-->
-    <section id="welcome-section">
+    <section id="welcome-section" class="welcome">
       <!-- User Story #2: The welcome section should have
 an h1 element that contains text.-->
       <hgroup>
@@ -61,48 +61,49 @@ an h1 element that contains text.-->
       </hgroup>
     </section>
 
-    <main>
-      <div class="certificate">
-        <section class="about-certificate" id="about-certificate">
-          <h2>Responsive Web Design Certification</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </section>
+    <div class="certificate">
+      <section class="about-certificate" id="about-certificate">
+        <h2>Responsive Web Design Certification</h2>
+        <p>
+          To claim the Responsive Web Design Certification from Free Code Camp I
+          had to design and built from scratch five projects presented here.
+          Each project fulfill FCC user stories required to complite the task.
+        </p>
+        <button>
+          <a href="" target="_blank"> View the course curriculum</a>
+        </button>
+      </section>
 
-        <!-- User Story #3: My portfolio should have a projects section
+      <!-- User Story #3: My portfolio should have a projects section
 with an id of projects.-->
-        <section class="projects" id="projects">
-          <!-- User Story #4: The projects section should contain at least one element
+      <section class="projects" id="projects">
+        <!-- User Story #4: The projects section should contain at least one element
 with a class of project-tile to hold a project.-->
-          <!-- User Story #5: The projects section should contain at least one link to a project.-->
-          <div class="project-tile" id="project1">
+        <!-- User Story #5: The projects section should contain at least one link to a project.-->
+        <div class="project-tile" id="project1">
+          <div class="project-name">
             <h3>Tribute Page</h3>
             <ul class="git-demo">
               <li>
                 <a
-                  href="https://github.com/theCieniu/grzedowicz"
+                  href="https://github.com/theCieniu/fcc-tribute-page"
                   target="_blank"
                   >GitHub</a
                 >
               </li>
               <li>
                 <a
-                  href="https://thecieniu.github.io/grzedowicz/"
+                  href="https://thecieniu.github.io/fcc-tribute-page/"
                   target="_blank"
                   >Live</a
                 >
               </li>
             </ul>
           </div>
+        </div>
 
-          <div class="project-tile" id="project2">
+        <div class="project-tile" id="project2">
+          <div class="project-name">
             <h3>Survey Form</h3>
             <ul class="git-demo">
               <li>
@@ -114,31 +115,39 @@ with a class of project-tile to hold a project.-->
               </li>
               <li>
                 <a
-                  href="https://thecieniu.github.io/surveyform/"
+                  href="https://thecieniu.github.io/fcc-survey-form/"
                   target="_blank"
                   >Live</a
                 >
               </li>
             </ul>
           </div>
+        </div>
 
-          <div class="project-tile" id="project3">
+        <div class="project-tile" id="project3">
+          <div class="project-name">
             <h3>Product Landing Page</h3>
             <ul class="git-demo">
               <li>
-                <a href="https://github.com/theCieniu/rossa" target="_blank"
+                <a
+                  href="https://github.com/theCieniu/fcc-product-landing-page"
+                  target="_blank"
                   >GitHub</a
                 >
               </li>
               <li>
-                <a href="https://thecieniu.github.io/rossa/" target="_blank"
+                <a
+                  href="https://thecieniu.github.io/fcc-product-landing-page/"
+                  target="_blank"
                   >Live</a
                 >
               </li>
             </ul>
           </div>
+        </div>
 
-          <div class="project-tile" id="project4">
+        <div class="project-tile" id="project4">
+          <div class="project-name">
             <h3>Documentation Page</h3>
             <ul class="git-demo">
               <li>
@@ -150,15 +159,17 @@ with a class of project-tile to hold a project.-->
               </li>
               <li>
                 <a
-                  href="https://thecieniu.github.io/technical-documentation-page/"
+                  href="https://thecieniu.github.io/fcc-technical-documentation-page/"
                   target="_blank"
                   >Live</a
                 >
               </li>
             </ul>
           </div>
+        </div>
 
-          <div class="project-tile" id="project5">
+        <div class="project-tile" id="project5">
+          <div class="project-name">
             <h3>This Portfolio</h3>
             <ul class="git-demo">
               <li>
@@ -171,27 +182,84 @@ with a class of project-tile to hold a project.-->
               <li><a href="#">Live</a></li>
             </ul>
           </div>
-        </section>
+        </div>
+      </section>
+    </div>
+
+    <section id="about" class="about">
+      <div class="about-text">
+        <h2>About me:</h2>
+        <ul>
+          <li>Paulina Weiher from Gdańsk, Poland</li>
+          <li>Biotechnologist specialized in virusology</li>
+          <li>
+            Blogger at
+            <a class="inline-link" href="https://www.cienistosc.pl/"
+              >cienistosc.pl</a
+            >
+          </li>
+          <li>Love learning new things, fantasy books and art</li>
+          <li>Wife and cat mum</li>
+        </ul>
+
+        <a class="button" href="/code/#css-grid" title="my hobbies"
+          >More about</a
+        >
       </div>
-      <div class="about" id="about">
-        <h2>About me</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+
+      <div class="about-photo">
+        <img
+          class="profilephoto"
+          src="images/pweiher.jpg"
+          alt="Paulina Weiher profile photo"
+        />
       </div>
-    </main>
+    </section>
 
     <footer>
-      Created by
-      <a href="https://github.com/theCieniu" target="_blank"
-        >Paulina Weiher @theCieniu</a
-      >
+      <p>
+        <a href="https://github.com/theCieniu/fcc-portfolio"
+          ><i class="fas fa-code"></i>this site's code</a
+        >
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://github.com/theCieniu"
+            target="_blank"
+            title="github profile @theCieniu"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/theCieniu"
+            target="_blank"
+            title="twitter profile @theCieniu"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/thecieniu/"
+            target="_blank"
+            title="instagram profile @theCieniu"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        I don't serve any cookies, I'm on a diet.
+        <a href="https://github.com/theCieniu" target="_blank"
+          >Paulina Weiher @theCieniu</a
+        >
+        &copy; 2020
+      </p>
     </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
