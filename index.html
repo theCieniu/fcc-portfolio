@@ -1,134 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FCC portfolio</title>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/favicon-freecodecamp.jpg" type="image/ico" />
+    <meta name="author" content="Paulina Weiher" />
+    <meta name="keywords" content="web developer, portfolio" />
+    <meta
+      name="description"
+      content="Free Code Camp, Responsive Web Design certification portfolio"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>FCC portfolio</title>
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="images/favicon-freecodecamp.jpg" type="image/ico">
-  <meta name="author" content="Paulina Weiher">
-  <meta name="keywords" content="web developer, portfolio">
-  <meta name="description" content="Free Code Camp, Responsive Web Design certification portfolio">
-</head>
-
-
-
-<body>
-
-  <!-- User Story #6: My portfolio should have a navbar with an id of navbar.-->
-  <nav id="navbar">
-    <header><span class="fcc">Free Code Camp</span>
-      <img src="images/freecodecamp.jpg">Projects by Paulina Weiher
-    </header>
-    <ol>
-      <!-- User Story #7: The navbar should contain at least one link
+  <body>
+    <!-- User Story #6: My portfolio should have a navbar with an id of navbar.-->
+    <nav id="navbar">
+      <header>
+        <span class="fcc">Free Code Camp</span>
+        <img src="images/freecodecamp.jpg" />
+        <span>Projects by Paulina Weiher</span>
+      </header>
+      <ol>
+        <!-- User Story #7: The navbar should contain at least one link
 that I can click on to navigate to different sections of the page.-->
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a id="profile-link" href="https://github.com/theCieniu" target="_blank">GitHub</a></li>
-      <!-- User Story #8: My portfolio should have a link with an id of profile-link,
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li>
+          <a
+            id="profile-link"
+            href="https://github.com/theCieniu"
+            target="_blank"
+            >GitHub</a
+          >
+        </li>
+        <!-- User Story #8: My portfolio should have a link with an id of profile-link,
         which opens my GitHub or FCC profile in a new tab.-->
-    </ol>
-  </nav>
+      </ol>
+    </nav>
 
-
-
-
-
-
-  <!-- User Story #1: My portfolio should have a welcome section
+    <!-- User Story #1: My portfolio should have a welcome section
 with an id of welcome-section.-->
-  <section id="welcome-section">
-    <!-- User Story #2: The welcome section should have
+    <section id="welcome-section">
+      <!-- User Story #2: The welcome section should have
 an h1 element that contains text.-->
-    <hgroup>
-      <h1>Free Code Camp projects by Paulina Weiher</h1>
-      <h2 id="typing"></h2>
-    </hgroup>
-  </section>
+      <hgroup>
+        <h1>Free Code Camp projects by Paulina Weiher</h1>
+        <h2 id="typing" class="fcc"></h2>
+      </hgroup>
+    </section>
 
+    <main>
+      <div class="certificate">
+        <section class="about-certificate" id="about-certificate">
+          <h2>Responsive Web Design Certification</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
 
-  <main>
-
-    <div class="certificate">
-
-
-
-      <section class="about-certificate">
-        <h2>Responsive Web Design Certification</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
-
-
-
-      <!-- User Story #3: My portfolio should have a projects section
+        <!-- User Story #3: My portfolio should have a projects section
 with an id of projects.-->
-      <section class="projects" id="projects">
-        <!-- User Story #4: The projects section should contain at least one element
+        <section class="projects" id="projects">
+          <!-- User Story #4: The projects section should contain at least one element
 with a class of project-tile to hold a project.-->
-        <!-- User Story #5: The projects section should contain at least one link to a project.-->
-        <div class="project-tile" id="project1">
-          <h3>Tribute Page</h3>
-          <ul class="git-demo">
-            <li><a href="https://github.com/theCieniu/grzedowicz" target="_blank">GitHub</a></li>
-            <li><a href="https://thecieniu.github.io/grzedowicz/" target="_blank">Live</a></li>
-          </ul>
-        </div>
+          <!-- User Story #5: The projects section should contain at least one link to a project.-->
+          <div class="project-tile" id="project1">
+            <h3>Tribute Page</h3>
+            <ul class="git-demo">
+              <li>
+                <a
+                  href="https://github.com/theCieniu/grzedowicz"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://thecieniu.github.io/grzedowicz/"
+                  target="_blank"
+                  >Live</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div class="project-tile" id="project2">
-          <h3>Survey Form</h3>
-          <ul class="git-demo">
-            <li><a href="https://github.com/theCieniu/surveyform" target="_blank">GitHub</a></li>
-            <li><a href="https://thecieniu.github.io/surveyform/" target="_blank">Live</a></li>
-          </ul>
-        </div>
+          <div class="project-tile" id="project2">
+            <h3>Survey Form</h3>
+            <ul class="git-demo">
+              <li>
+                <a
+                  href="https://github.com/theCieniu/surveyform"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://thecieniu.github.io/surveyform/"
+                  target="_blank"
+                  >Live</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div class="project-tile" id="project3">
-          <h3>Product Landing Page</h3>
-          <ul class="git-demo">
-            <li><a href="https://github.com/theCieniu/rossa" target="_blank">GitHub</a></li>
-            <li><a href="https://thecieniu.github.io/rossa/" target="_blank">Live</a></li>
-          </ul>
-        </div>
+          <div class="project-tile" id="project3">
+            <h3>Product Landing Page</h3>
+            <ul class="git-demo">
+              <li>
+                <a href="https://github.com/theCieniu/rossa" target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a href="https://thecieniu.github.io/rossa/" target="_blank"
+                  >Live</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div class="project-tile" id="project4">
-          <h3>Documentation Page</h3>
-          <ul class="git-demo">
-            <li><a href="https://github.com/theCieniu/technical-documentation-page" target="_blank">GitHub</a></li>
-            <li><a href="https://thecieniu.github.io/technical-documentation-page/" target="_blank">Live</a></li>
-          </ul>
-        </div>
+          <div class="project-tile" id="project4">
+            <h3>Documentation Page</h3>
+            <ul class="git-demo">
+              <li>
+                <a
+                  href="https://github.com/theCieniu/technical-documentation-page"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://thecieniu.github.io/technical-documentation-page/"
+                  target="_blank"
+                  >Live</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div class="project-tile" id="project5">
-          <h3>This Portfolio</h3>
-          <ul class="git-demo">
-            <li><a href="https://github.com/theCieniu/fcc-portfolio" target="_blank">GitHub</a></li>
-            <li><a href="#">Live</a></li>
-          </ul>
-        </div>
+          <div class="project-tile" id="project5">
+            <h3>This Portfolio</h3>
+            <ul class="git-demo">
+              <li>
+                <a
+                  href="https://github.com/theCieniu/fcc-portfolio"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li><a href="#">Live</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="about" id="about">
+        <h2>About me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </main>
 
+    <footer>
+      Created by
+      <a href="https://github.com/theCieniu" target="_blank"
+        >Paulina Weiher @theCieniu</a
+      >
+    </footer>
 
-      </section>
-    </div>
-    <div class="about" id="about">
-      <h2>About me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    </div>
-
-  </main>
-
-  <footer>
-    Created by <a href="https://github.com/theCieniu" target="_blank">Paulina Weiher @theCieniu</a>
-  </footer>
-
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  <script src="script.js"></script>
-</body>
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
